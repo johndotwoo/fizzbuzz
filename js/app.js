@@ -9,7 +9,7 @@ $(document).ready(function() {
 });
 
 function validateThenFizzBuzz(form) {
-	if(form == "" || form ==null || form < 1 || form > 999) {
+	if(form == "" || form ==null || form < 1 || form > 999 || form % 1 != 0) {
 		alert("Please enter a number from 1 to 999");
 		return false;
 	}
