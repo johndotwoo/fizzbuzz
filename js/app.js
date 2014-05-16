@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$('#fizzBuzzContainer').on('click','.startButton',function() {
 		entryFromUser = +$('#formEntryFromUser').val();
 		$('#formEntryFromUser').val('');		// clear form entry
-		validateThenFizzBuzz(entryFromUser);	// validate input, if true execute fizzbuzz
+		validateThenFizzBuzz(entryFromUser);	// validate input, if good execute fizzbuzz
 	});
 
 });
