@@ -4,8 +4,15 @@ $(document).ready(function() {
 		entryFromUser = +$('#formEntryFromUser').val();
 		$('#formEntryFromUser').val('');		// clear form entry
 		validateThenFizzBuzz(entryFromUser);	// validate input, if good execute fizzbuzz
-	});
+	})
 
+	$('#fizzBuzzContainer').keyup(function(event) {
+		if (event.keyCode == 13) {
+			entryFromUser = +$('#formEntryFromUser').val();
+			$('#formEntryFromUser').val('');		// clear form entry
+			validateThenFizzBuzz(entryFromUser);	// validate input, if good execute fizzbuzz
+		}
+	});
 });
 
 function validateThenFizzBuzz(form) {
