@@ -16,13 +16,13 @@ $(document).ready(function() {
 });
 
 function validateThenFizzBuzz(form) {
-	if(form == "" || form ==null || form < 1 || form > 999 || form % 1 != 0) {
+	if(form == "" || form == null || form < 1 || form > 999 || form % 1 != 0) {
 		alert("Please enter a number from 1 to 999");
 		return false;
 	}
 	else {
-		$('.fizzBuzzCounts').empty();			// dump previous fizzBuzz content
-		fizzBuzzFxn(entryFromUser);				// run fizz buzz function
+		$('.fizzBuzzCounts').empty();	// dump previous fizzBuzz content
+		fizzBuzzFxn(form);				// run fizz buzz function
 	}
 }
 
